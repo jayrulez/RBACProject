@@ -1,0 +1,10 @@
+.vs/**
+.vscode/**
+*.sln
+**/bin
+**/obj
+**/appsettings.json
+**/*.xproj.user
+*.csproj.user
+*.userprefs
+
