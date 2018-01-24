@@ -10,7 +10,7 @@ namespace RBACProject.Areas.Admin.Controllers
     [Route("[area]/[controller]/[action]")]
     public class RolesController : Controller
     {
-        //[TypeFilter(typeof(HasPermissionAttribute), Arguments = new object[] { PermissionList.ViewRoles.Id })]
+        [TypeFilter(typeof(HasPermissionAttribute), Arguments = new object[] { PermissionList.ViewRoles })]
         public IActionResult Index()
         {
             return View();

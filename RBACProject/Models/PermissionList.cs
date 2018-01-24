@@ -6,38 +6,38 @@ namespace RBACProject.Models
     {
         public static List<Permission> GetAll() => new List<Permission>
         {
-            ViewRoles,
-            CreateRoles,
-            EditRoles,
-            DeleteRoles
+            new Permission
+            {
+                Id = "ViewRoles",
+                Name = "View Roles",
+                Description = "View roles"
+            },
+            new Permission
+            {
+                Id = "CreateRoles",
+                Name = "Create Roles",
+                Description = "Create roles"
+            },
+            new Permission
+            {
+                Id = "EditRoles",
+                Name = "Edit Roles",
+                Description = "Edit roles"
+            },
+            new Permission
+            {
+                Id = "DeleteRoles",
+                Name = "Delete Roles",
+                Description = "Delete roles"
+            }
         };
 
-        public static Permission ViewRoles = new Permission
-        {
-            Id = "ViewRoles",
-            Name = "View Roles",
-            Description = "View roles"
-        };
+        public const string ViewRoles = "ViewRoles";
 
-        public static Permission CreateRoles = new Permission
-        {
-            Id = "CreateRoles",
-            Name = "Create Roles",
-            Description = "Create roles"
-        };
+        public const string CreateRoles = "CreateRoles";
 
-        public static Permission EditRoles = new Permission
-        {
-            Id = "EditRoles",
-            Name = "Edit Roles",
-            Description = "Edit roles"
-        };
+        public const string EditRoles = "EditRoles";
 
-        public static Permission DeleteRoles = new Permission
-        {
-            Id = "DeleteRoles",
-            Name = "Delete Roles",
-            Description = "Delete roles"
-        };
+        public const string DeleteRoles = "DeleteRoles";
     }
 }
